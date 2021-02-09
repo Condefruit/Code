@@ -36,7 +36,11 @@ select * from UFC
 
 ![](tables/table1.png)
 
-oups !
+
 ```sql
-ALTER TABLE UFC CHANGE Figher_Name Fighter_name TEXT NOT NULL;
+select Fighter_Name, ranking from UFC where ranking = 'C';
 ```
+
+![](tables/table2.png)
+
+For more, check the other files...
