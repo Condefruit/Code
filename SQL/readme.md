@@ -3,7 +3,7 @@ I picked this subject to train on SQL language :
 
 ```sql
 CREATE TABLE UFC (
-    Figher_Name TEXT         NOT NULL,
+    Figther_Name TEXT         NOT NULL,
     surname     TEXT,
     sexe        TEXT,
     age         SMALLINT,
@@ -17,14 +17,14 @@ CREATE TABLE UFC (
     UFC_debut   DATE,
     ranking     VARCHAR,
     PRIMARY KEY (
-        Figher_Name
+        Fighter_Name
     )
 );
 
-INSERT INTO UFC (Figher_Name, surname, sexe, age, country, size, Categorie, Style, wins, loses, draw, UFC_debut, ranking) 
+INSERT INTO UFC (Figther_Name, surname, sexe, age, country, size, Categorie, Style, wins, loses, draw, UFC_debut, ranking) 
 VALUES ('Deiveson Figueiredo', 'Deus Da Geurra', 'M', 32, 'Brazil', 165, 'Flyweight', 'Boxing', 20, 1, 0, '2020-06-03', 'C');
 
-INSERT INTO UFC (Figher_Name, surname, sexe, age, country, size, Categorie, Style, wins, loses, draw, UFC_debut, ranking) 
+INSERT INTO UFC (Figther_Name, surname, sexe, age, country, size, Categorie, Style, wins, loses, draw, UFC_debut, ranking) 
 VALUES ('Brandon Moreno', 'The Assassin Baby', 'M', 26, 'Mexico', 170, 'Flyweight', 'Jui-Jitsu', 18, 5, 1, '2016-10-02', 1);
 ```
 etc
@@ -35,3 +35,8 @@ select * from UFC
 
 
 ![](tables/table1.png)
+
+oups !
+```sql
+ALTER TABLE UFC CHANGE Figher_Name Fighter_name TEXT NOT NULL;
+```
