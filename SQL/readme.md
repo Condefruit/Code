@@ -43,6 +43,8 @@ select Fighter_Name, ranking from UFC where ranking = 'C';
 
 ![](tables/table2.png)
 
-For more, check the other files...
+Graphic represation of the "UFC table" using Tableau software.
 
 ![](tables/graph1.PNG)
+
+For more, check the other files...
