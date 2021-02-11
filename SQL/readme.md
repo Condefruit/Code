@@ -44,3 +44,5 @@ select Fighter_Name, ranking from UFC where ranking = 'C';
 ![](tables/table2.png)
 
 For more, check the other files...
+
+![](tables/graph1.PNG)
