@@ -73,8 +73,8 @@ WHERE
 
 ![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a042.png)
 
+Let's find out how many societies are link to the two intermediaries Patcher and Plouf.  
 
-umber of societies related with each of the 
 ```SQL
 select
     i.id as intermediary_id,
@@ -86,22 +86,64 @@ FROM
     intermediary i,
     assoc_inter_entity a,
     entity e
-WHERE
-    a.entity = e.id
-    AND a.inter = i.id
-    AND e.name = 'Big Data Crunchers Ltd.' ;
+WHERE 
+    a.entity = e.id 
+    AND a.inter = i.id 
+    AND (i.id = 5000 OR i.id = 5001 OR lower(i.name) LIKE '%pacher%banking%'
+        OR
+        lower(i.name) LIKE '%plouf%financial%services%')
+GROUP BY 
+    i.id, i.name, e.jurisdiction;
 ```
+
 ![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a05.png)
 
+And where they have the most activity :
+
 
 ```SQL
-
+select
+    i.id as intermediary_id,
+    i.name as intermediary_name,
+    e.jurisdiction,
+    e.jurisdiction_description,
+    count(*) as cnt
+FROM 
+    intermediary i,
+    assoc_inter_entity a,
+    entity e
+WHERE 
+    a.entity = e.id 
+    AND a.inter = i.id 
+    AND (i.id = 5000 OR i.id = 5001) 
+GROUP BY 
+    i.id, i.name, e.jurisdiction, e.jurisdiction_description
+HAVING
+    count(*) > 100
+ORDER BY cnt desc
+    ;
 ```
+
+![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a07.png)
+
+Finally, with the use of the last table : assoc_officer_entity, we can try to discover to whom belongs Big Data Crunchers
 
 ```SQL
-
+select
+    e.id as entity_id,
+    e.name as entity_name,
+    o.id as officer_id,
+    o.name as officer_name
+FROM 
+    entity e,
+    assoc_officer_entity a,
+    officer o
+WHERE
+    e.id = a.entity 
+    AND a.officer = o.id
+    AND e.name = 'Big Data Crunchers Ltd.' ;
 ```
 
-```SQL
+![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a08.png)
 
-```
+Tada !
