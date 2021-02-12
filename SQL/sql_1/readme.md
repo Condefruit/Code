@@ -3,7 +3,7 @@ We are using a modified database of the Panama papers (2016) : https://en.wikipe
 The goal of the exercice is to investigate on a society named “Big Data Crunchers Ltd”, that might be an offshore shell of some other company.
 
 
-The entity table contains all the offshore societies
+The entity table contains all the offshore societies.
 
 ```SQL
 select * from entity
@@ -126,7 +126,7 @@ ORDER BY cnt desc
 
 ![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a07.png)
 
-Finally, with the use of the last table : assoc_officer_entity, we can try to discover to whom belongs Big Data Crunchers
+Finally, with the use of the last table : assoc_officer_entity, we can try to discover to whom belongs Big Data Crunchers.
 
 ```SQL
 select
