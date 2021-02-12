@@ -1,5 +1,5 @@
 <a href="https://www.codingame.com/ide/puzzle/target-firing" target="_blank"> You can find the exercice here </a>
-[Hello, world!](http://example.com/){Btarget="_blank"}
+[Hello, world!](http://example.com/){target="_blank"}
 
 «Story»
 Your spaceship is under attack by aliens! (It's actually your friend's spaceship, so the situation is even worse) Luckily your spaceship is equipped with an antimatter beam, while the aliens only have cheap (but still dangerous) laser pointers. Can you destroy all alien spaceships safely, or should you flee?
