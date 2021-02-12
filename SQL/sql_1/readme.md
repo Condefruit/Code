@@ -8,12 +8,12 @@ The entity table contains all the offshore societies
 ```SQL
 select * from entity
 ```
-![](SQL/tables/table_a01.png)
+![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a01.png)
 
 ```SQL
 select id, name, jurisdiction, status FROM entity Where name = 'Big Data Crunchers Ltd.' ;
 ```
-![](tables/table_a02.png)
+![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a02.png)
 
 Intermediary and officers are respectivly the tables containing all the intermediaries and all the beneficiaries.
 
@@ -31,11 +31,11 @@ select * FROM
     select name, id FROM officer)
 WHERE name = 'Big Data Crunchers Ltd.' ;
 ```
-Both return :
-![](tables/table_a03.png)
+Both return an empty table :
+![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a03.png)
 As we can see, Big Data Crunchers is only present in the entity table.
 
-The last table of the database : "adress" gives us the physical adresses of some of the compagnies or intermediaries.
+The table "address" of the database, gives us the physical addresses of some of the compagnies or intermediaries.
 
 ```SQL
 select 
@@ -48,8 +48,11 @@ FROM entity e, address a
 WHERE e.id_address = a.id_address 
     AND e.name = 'Big Data Crunchers Ltd.' ; 
 ```
-![](Code/SQL/tables/table_a04.png)
+![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a04.png)  
 Strange address, isn't it ?
+
+The next step is looking for the intermediaries which are linked to the creation of our mysterious society.  
+Thanks to the table "assoc_inter_entity", which is a assocation table with two foreign keys related to entity and intermediary, it's pretty easy.
 
 ```SQL
 select
@@ -68,11 +71,28 @@ WHERE
     AND e.name = 'Big Data Crunchers Ltd.' ;
 ```
 
-![](tables/table_a05.png)
+![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a042.png)
 
+
+umber of societies related with each of the 
 ```SQL
-
+select
+    i.id as intermediary_id,
+    i.name as intermediary_name,
+    e.id as entity_id,
+    e.name as entity_name,
+    e.status as entity_status
+FROM 
+    intermediary i,
+    assoc_inter_entity a,
+    entity e
+WHERE
+    a.entity = e.id
+    AND a.inter = i.id
+    AND e.name = 'Big Data Crunchers Ltd.' ;
 ```
+![](https://github.com/Condefruit/Code/blob/main/SQL/tables/table_a05.png)
+
 
 ```SQL
 
