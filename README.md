@@ -8,8 +8,8 @@ HTML (pour du perso), C# (en université), Matlab (au boulot) ou encore Python (
 
 Tu trouveras ici certains exemple de codes que je produits lors de ma formation en ligne, d'exercices de type codewars.com ou codegames.com et autres...
 
-<a href = "https://github.com/Condefruit/Code/tree/main/SQL">SQL<\a>  
-<a href = "https://github.com/Condefruit/Code/tree/main/Python"> Python<\a>
+<a href = "https://github.com/Condefruit/Code/tree/main/SQL">SQL</a>  
+<a href = "https://github.com/Condefruit/Code/tree/main/Python"> Python</a>
   
 -----------------------------------------------------------------------------
 
@@ -22,5 +22,5 @@ HTML (for personal use), C # (university), Matlab (at the office) or even Python
 
 Here you will find some examples of codes that I'm producing during my online training, exercises like codewars.com or codegames.com and others stuff...
 
-<a href = "https://github.com/Condefruit/Code/tree/main/SQL">SQL<\a>
-<a href = "https://github.com/Condefruit/Code/tree/main/Python"> Python<\a>
+<a href = "https://github.com/Condefruit/Code/tree/main/SQL">SQL</a>  
+<a href = "https://github.com/Condefruit/Code/tree/main/Python"> Python</a>
