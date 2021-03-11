@@ -5,11 +5,19 @@ Write a function that accepts a string, and returns the same string with all eve
 
 My answer :
 ```Python
-def bool_to_word(boolean):
-    if boolean == True:
-        return "Yes"
-    else:
-        return "No"
+def to_weird_case(string):
+    text = ""
+    j = 0
+    for i in range(len(string)) :
+        if j%2 == 0 :
+            text = text + string[i].upper()  
+        else :
+            text = text + string[i].lower() 
+        if string[i] != " " :
+            j += 1
+        else :
+            j = 0
+    return(text)
 ```
 Smart choice could also be :
 
