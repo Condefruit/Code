@@ -15,7 +15,9 @@ def find_smallest_int(arr):
     print(arr)
     return arr[0]
 ```
-Bit of overkill but also wanted to sort the array :)
+Bit of overkill but also wanted to sort the array :) .
+
+-----
 
 The easier and fastest way would be (straight to the point) :
 
