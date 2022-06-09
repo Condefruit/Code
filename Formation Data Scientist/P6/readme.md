@@ -15,9 +15,9 @@ L'objectif est donc Etudier la faisabilité d'un moteur de classification <br>
 
  
 Pour ce faire, on va <br>
-:one: Analyser le jeu de données en réaliser un prétraitement
+:one: Analyser le jeu de données en réaliser un prétraitement <br>
 :two: Extraire les features texte de la description des produits <br> 
-:three: Extraire les features visuelles des images des produits <br> <br>.
+:three: Extraire les features visuelles des images des produits <br>.
 
 
 --------------------------
