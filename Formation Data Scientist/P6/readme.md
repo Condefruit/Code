@@ -1,7 +1,3 @@
-Contexte : 
-Data Scientist au sein de l’entreprise , qui souhaite lancer une marketplace e-commerce.
-La mission consiste à automatiser la classafication des articles mis en vente via leur description (NLP) et image associée (Computeur Vision).
-
 ## Projet 06 du parcours Data Scientist (OpenClassrooms)
 La présentation c'est par [ici](https://github.com/Condefruit/Code/blob/main/Formation%20Data%20Scientist/P6/P6_03_presentation.pdf)
 
