@@ -3,7 +3,7 @@ La présentation c'est par [ici](https://github.com/Condefruit/Code/blob/main/Fo
 
 -------------------
 
-### Classification automatiqueme de biens de consommation
+### Classification automatique de biens de consommation
 
 Data Scientist au sein de la société "Place de marché”, qui souhaite lancer une marketplace e-commerce. <br>
 L'attribution de la catégorie d'un article est effectuée manuellement par les vendeurs. Pour travailler avec de plus gros volume et faciliter l’expérience utilisateurs/vendeurs, on cherche à réaliser cette tache de manière automatique. <br>
